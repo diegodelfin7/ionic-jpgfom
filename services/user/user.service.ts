@@ -4,9 +4,7 @@ import { Observable } from 'rxjs';
 
 import { User } from '../../models/user';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class UserService{
   baseUrl = "https://my-json-server.typicode.com/animeshroydev/SampleJSONPlaceholder/";
 

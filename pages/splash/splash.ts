@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { UserService } from '../../services/user/user.service';
 
-//import { UserService } from '../../services/user/UserService';
+
 
 @Component({
   selector: 'page-splash',
@@ -9,8 +10,7 @@ import { NavController } from 'ionic-angular';
 })
 export class SplashPage {
 
-  constructor(public navCtrl: NavController) {
-    //console.log('service', this.userService);
+  constructor(public navCtrl: NavController,private userService: UserService) {
   }
 
 }

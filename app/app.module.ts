@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SplashPage } from '../pages/splash/splash';
 
+import { UserService } from '../services/user/user.service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -32,7 +34,8 @@ import { SplashPage } from '../pages/splash/splash';
     SplashPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserService
   ]
 })
 export class AppModule {}
